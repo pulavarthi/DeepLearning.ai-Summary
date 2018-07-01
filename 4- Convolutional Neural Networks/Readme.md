@@ -97,6 +97,8 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 - One of the challenges of computer vision problem that images can be so large and we want a fast and accurate algorithm to work with that.
   - For example, a `1000x1000` image will represent 3 million feature/input to the full connected neural network. If the following hidden layer contains 1000, then we will want to learn weights of the shape `[1000, 3 million]` which is 3 billion parameter only in the first layer and thats so computationally expensive!
 - One of the solutions is to build this using **convolution layers** instead of the **fully connected layers**.
+-gray scale image - single channel of light
+-normal image - has 3 channels, RGB
 
 ### Edge detection example
 
@@ -158,6 +160,12 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   ```
 
 - In computer vision f is usually odd. Some of the reasons is that its have a center value.
+- Valid convolutions: no padding at all
+
+**Tensor**
+-  A tensor is a mathematical entity that lives in a structure and interacts with other mathematical entities. If one transforms the other entities in the structure in a regular way, then the tensor must obey a related transformation rule.
+-	Read medium article for example:
+-	https://medium.com/@quantumsteinke/whats-the-difference-between-a-matrix-and-a-tensor-4505fbdc576c
 
 ### Strided convolution
 
@@ -262,7 +270,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - Fully connected     `#FC`
 
 ### Pooling layers
-
+- Pooling is applied to each channel independently unlike convolution
 - Other than the conv layers, CNNs often uses pooling layers to reduce the size of the inputs, speed up computation, and to make some of the features it detects more robust.
 - Max pooling example:
   - ![](Images/02.png)
