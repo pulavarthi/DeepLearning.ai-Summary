@@ -338,6 +338,9 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 - Putting it all together:
   - ![](Images/04.png)
 
+ **Important points**
+ - Even though pooling layers do not have parameters, they affect the backpropagation (derivatives) calculation.
+ 
 ## Deep convolutional models: case studies
 
 > Learn about the practical tricks and methods used in deep CNNs straight from the research papers.
