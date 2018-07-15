@@ -324,6 +324,7 @@ Here are the course summary as its given on the course [link](https://www.course
 
 - Gradient descent converges faster after normalization of the input matrices.
 
+- One common preprocessing step in machine learning is to center and standardize your dataset, meaning that you substract the mean of the whole numpy array from each example, and then divide each example by the standard deviation of the whole numpy array. But for picture datasets, it is simpler and more convenient and works almost as well to just divide every row of the dataset by 255 (the maximum value of a pixel channel).
 ### General Notes
 
 - The main steps for building a Neural Network are:
